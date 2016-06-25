@@ -1,0 +1,11 @@
+What happens when you initialize a repository? Why do you need to do it?
+Git creates a .git file to track the changes of files in the repository. You need to do it because otherwise nothing is tracking the changes of your files
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area allows you to specify exactly what you want to commit which may not include all of the files you edited. Sometimes you might want to split your changes up into a few commits but you need them in the same repo. Other times, you might not have any intention of commit a change - for example setting the destination To address of an alert email to your personal email instead of the team's so that you can test notifications without spamming folks.
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can make multiple changes and then move logical chucks up to staging before committing
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+You merge the commits of the two branches into one, creating a new commit which points to both commit branches. 

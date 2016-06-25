@@ -1,0 +1,29 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It narrowed my focus to just those lines which had changed. We know that one version was working and one was broken. By focusing on only the changes, we could eliminate the hundreds of lines of unchanged code where the bug probably wasn't. By examining only the few changed lines, the error introducted stood out a lot more. This will be even more true when you have a file with 1,000+ lines of code from many different developers. 
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+You can view the layers of changes as they were introduced - often by many developers. This allows you to see how the document evolved. By looking at changelists/pull requests you can see the rational for each change and any back-and-forth between reveiwers. You can also identify who owns a piece of code (or, at least, changed it last). 
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pros: Each commit should be a logical bundle of changes. Looking at the diffs between commits should be a really useful way of seeing the file/project evolve. We rely on the judgement of the developer and any code reveiwer to make sure this is true. 
+
+Con: We rely on the judgement of the developer and any code reveiwer to make sure the commits have the appropriate size and scope. 
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Version control systems are designed for managing code. In programming, files are are almost always interdependent. Google Docs is intended for managing word documents which are usually independent of each other. 
+
+You can use git log to view a log of all of the commits to a repo (and, presumably, with the appropriate flag a specific file). You can then call git diff <baseCommit> <changeCommit> to view the changes in that commit.
+
+How might using version control make you more confident to make changes that could break something?
+Version control makes it really easy to see your changes and roll back between commits. You can move quickly and, as long as you're careful, roll back if you ever see an issue. 
+
+Now that you have your workspace set up, what do you want to try using Git for?
+I want to upload my first project from the udacity course. Build out a nice little body of work over the course of this nanodegree! woo woo!
+
