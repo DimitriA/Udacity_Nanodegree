@@ -28,4 +28,6 @@ Fill in your answer here
     When would you want to make changes in a separate branch rather than directly in
     master?  What benefits does each approach have?
 
-Fill in your answer here
+When working on a solo project, it probably makes sense to just work in master. 
+But if you want to collaborate with others, you will almost always want to work
+in branches for which you send pull requests
